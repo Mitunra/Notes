@@ -56,7 +56,7 @@ const transporter = nodemailer.createTransport({
 // });
 
 // Firebase Scheduled Function to run every minute (for demo purposes)
-exports.sendDailyReminder = functions.pubsub.schedule("every 1 minutes") // This would be 'every 1 minutes' for testing purposes, change later to user set time
+exports.sendDailyReminder = functions.pubsub.schedule("every 12 hours") // This would be 'every 1 minutes' for testing purposes, change later to user set time
     .timeZone("Asia/Kolkata")
     .onRun(async (context) => {
       console.log("inside function!!!!");

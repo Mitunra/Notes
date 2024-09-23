@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { db } from './firebaseConfig'; // Firestore config
-import { collection, getDocs, addDoc, query, where, updateDoc, doc, getDoc, setDoc } from 'firebase/firestore';// Firestore functions
+import { collection, getDocs, addDoc, updateDoc, doc, getDoc, setDoc } from 'firebase/firestore';// Firestore functions
 
 function App() {
   const [note, setNote] = useState('');
@@ -71,7 +71,11 @@ function App() {
 
   return (
     <div className="App">
+      
+      <div className="header-container">
       <h1>React Notes App</h1>
+</div>
+
 
       <h4>
         Enter the email for reminders: 
