@@ -38,10 +38,18 @@ h4 {
   margin: 10px 0;
 }
 
-input[type="email"],
+input[type="email"]{
+  width: 50%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 input[type="time"],
 input[type="date"]{
-  width: 80%;
+  width: 25%;
   padding: 10px;
   margin: 8px 0;
   border: 1px solid #ccc;
@@ -89,4 +97,38 @@ li {
   background-color: #f1f1f1;
   margin: 5px 0;
   border-radius: 4px;
+}
+
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+  width:auto;
+}
+
+
+hr {
+  border: none;       /* Removes default border */
+  height: 4px;        /* Adjust height to increase thickness */
+  background-color: #dde5dd;  /* Sets the color of the line */
+  margin: 20px 0;     /* Adds margin for spacing */
+  box-sizing: border-box;
+  width: calc(100% + 40px); /* Ensures hr extends to touch the box borders */
+  margin-left: -20px; /* Negative margin to offset padding */
 }
